@@ -1,0 +1,51 @@
+logging:
+  level:
+    ROOT: DEBUG
+    com.flo.demo: DEBUG
+spring:
+  profiles:
+    active: dev
+  h2:
+    console:
+      enabled: true
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:h2:file:./build/h2db/db/demo;DB_CLOSE_DELAY=-1
+    username: user
+    password:
+    hikari:
+      poolName: Hikari
+      auto-commit: false
+    initialization-mode: always
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      hibernate.format_sql: true
+      hibernate.id.new_generator_mappings: true
+  data:
+    elasticsearch:
+      properties:
+        path:
+          home: build/elasticsearch
+
+#  data:
+#    jest:
+#      uri: http://localhost:9200
+#      username: elastic
+#      password: changeme
+#  elasticsearch:
+#    rest:
+#      uris: http://localhost:9200
+#      username: elastic
+#      password: changeme
+server:
+  port: 8080
+
+application:
+  jwt:
+    base64-secret: b3SNbYO/94j/NcD0Qx942YRmNAaFfZtRs5bq2fPSaRfoEed08SUYDqiVGsVPL1pXWzeSb5sQOOTNhuUgM9sCAQ==
+    token-validity-in-seconds: 86400
+    token-validity-in-seconds-for-remember-me: 2592000

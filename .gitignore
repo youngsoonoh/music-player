@@ -1,0 +1,59 @@
+HELP.md
+######################
+# Gradle
+######################
+.gradle/
+/build/
+
+######################
+# Gradle Wrapper
+######################
+!gradle/wrapper/gradle-wrapper.jar
+
+
+!**/src/main/**
+!**/src/test/**
+
+
+
+### IntelliJ IDEA ###
+.idea/
+*.iml
+*.iws
+*.ipr
+*.ids
+*.orig
+classes/
+out/
+
+######################
+# Package Files
+######################
+*.jar
+*.war
+*.ear
+*.db
+
+######################
+# Mac OSX
+######################
+.DS_Store
+.svn
+
+######################
+# Windows
+######################
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+######################
+# Others
+######################
+*.class
+*.*~
+*~
+.merge_file*
+generated

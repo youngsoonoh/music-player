@@ -1,0 +1,93 @@
+plugins {
+    id 'org.springframework.boot' version '2.2.4.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+    id 'java'
+    id "idea"
+    id 'com.google.cloud.tools.jib' version '2.0.0'
+    id "net.ltgt.apt-idea" version "0.21"
+    id "net.ltgt.apt" version "0.21"
+}
+
+group = 'com.flo'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+assert System.properties["java.specification.version"] == "1.8" || "11" || "12" || "13"
+
+
+if (project.hasProperty("prod")) {
+    apply from: "gradle/profile_prod.gradle"
+} else {
+    apply from: "gradle/profile_dev.gradle"
+}
+
+
+jib {
+    from {
+        image = "adoptopenjdk:11-jre-hotspot"
+    }
+    to {
+        image = "flo/demo:latest"
+    }
+    container {
+        ports = ["8080"]
+        environment = [
+                SPRING_OUTPUT_ANSI_ENABLED: "ALWAYS"
+        ]
+        creationTime = "USE_CURRENT_TIMESTAMP"
+    }
+}
+
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+defaultTasks "bootRun"
+
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation "org.springframework.boot:spring-boot-starter-data-elasticsearch"
+    implementation("com.github.vanroy:spring-boot-starter-data-jest:3.3.0.RELEASE") {
+        exclude module: "commons-logging"
+    }
+    runtimeOnly "de.dentrassi.elasticsearch:log4j2-mock:0.0.2"
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation "io.jsonwebtoken:jjwt-api:${jjwt_version}"
+    implementation "io.jsonwebtoken:jjwt-impl:${jjwt_version}"
+    implementation "io.jsonwebtoken:jjwt-jackson:${jjwt_version}"
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation "org.springdoc:springdoc-openapi-ui:${springdoc_version}"
+    implementation "org.springdoc:springdoc-openapi-data-rest:${springdoc_version}"
+    implementation "org.springdoc:springdoc-openapi-security:${springdoc_version}"
+    implementation "org.zalando:problem-spring-web-starter:${problem_spring_web_versoin}"
+    compileOnly 'org.projectlombok:lombok'
+    implementation "org.mapstruct:mapstruct:${mapstruct_version}"
+    annotationProcessor "org.mapstruct:mapstruct-processor:${mapstruct_version}"
+    testImplementation "com.h2database:h2"
+    implementation "org.postgresql:postgresql"
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+    testImplementation 'org.springframework.security:spring-security-test'
+    testImplementation "com.h2database:h2"
+
+}
+
+test {
+    useJUnitPlatform()
+}
+
+wrapper {
+    gradleVersion = "6.0.1"
+}
+

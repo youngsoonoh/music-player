@@ -1,0 +1,10 @@
+version: '2'
+services:
+  demo-app:
+    image: 455871037518.dkr.ecr.ap-northeast-2.amazonaws.com/demo:latest
+    ports:
+      - 8080:8080
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+    volumes:
+      - ./logs:/logs

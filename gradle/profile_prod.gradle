@@ -1,0 +1,10 @@
+dependencies {
+    testImplementation "com.h2database:h2"
+}
+
+def profiles = "prod"
+
+bootRun {
+    args = ["--spring.profiles.active=" + profiles]
+}
+
