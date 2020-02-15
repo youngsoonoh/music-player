@@ -35,7 +35,7 @@ org.apache.tomcat.jni.LibraryNotFoundError: Can't load library: /mnt/c/study/flo
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.flo.demo.DemoApplication.main(DemoApplication.java:39)
+	at com.music.demo.DemoApplication.main(DemoApplication.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -62,7 +62,7 @@ java.lang.ClassNotFoundException: java.lang.reflect.InaccessibleObjectException
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.flo.demo.DemoApplication.main(DemoApplication.java:39)
+	at com.music.demo.DemoApplication.main(DemoApplication.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -744,9 +744,9 @@ org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1e5b83b
 2020-02-07 19:49:28,445 DEBUG [restartedMain] WebappClassLoaderBase:     --> Returning ClassNotFoundException
 2020-02-07 19:49:28,456 DEBUG [restartedMain] WebappClassLoaderBase:     findClass(java.lang.ObjectCustomizer)
 2020-02-07 19:49:28,456 DEBUG [restartedMain] WebappClassLoaderBase:     --> Returning ClassNotFoundException
-2020-02-07 19:49:28,461 DEBUG [restartedMain] WebappClassLoaderBase:     findClass(com.flo.demo.config.WebConfigurerCustomizer)
+2020-02-07 19:49:28,461 DEBUG [restartedMain] WebappClassLoaderBase:     findClass(com.music.demo.config.WebConfigurerCustomizer)
 2020-02-07 19:49:28,461 DEBUG [restartedMain] WebappClassLoaderBase:     --> Returning ClassNotFoundException
-2020-02-07 19:49:28,466 DEBUG [restartedMain] WebappClassLoaderBase:     findClass(com.flo.demo.config.WebConfigurer$$EnhancerBySpringCGLIB$$1ad2b8edCustomizer)
+2020-02-07 19:49:28,466 DEBUG [restartedMain] WebappClassLoaderBase:     findClass(com.music.demo.config.WebConfigurer$$EnhancerBySpringCGLIB$$1ad2b8edCustomizer)
 2020-02-07 19:49:28,467 DEBUG [restartedMain] WebappClassLoaderBase:     --> Returning ClassNotFoundException
 2020-02-07 19:49:28,470 DEBUG [restartedMain] WebappClassLoaderBase:     findClass(org.springframework.context.annotation.ConfigurationClassEnhancer$EnhancedConfigurationCustomizer)
 2020-02-07 19:49:28,470 DEBUG [restartedMain] WebappClassLoaderBase:     --> Returning ClassNotFoundException
@@ -1325,79 +1325,79 @@ Cookie: _ga=GA1.1.1518322240.1577945645; Idea-3916a5bc=cd84115c-bec5-4a96-aa4d-8
 2020-02-07 19:50:35,330 DEBUG [http-nio-8080-exec-7] WebappClassLoaderBase: getResourceAsStream(org/springframework/web/filter/GenericFilterBean.class)
 2020-02-07 19:50:35,331 DEBUG [http-nio-8080-exec-7] WebappClassLoaderBase:   Delegating to parent classloader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1e5b83bc
 2020-02-07 19:50:35,332 DEBUG [http-nio-8080-exec-7] WebappClassLoaderBase:   --> Returning stream from parent
-2020-02-07 19:50:35,428 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve org.springframework.http.ResponseEntity<com.flo.demo.web.vm.AlbumVM>
-2020-02-07 19:50:35,452 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.flo.demo.web.vm.AlbumVM]
-2020-02-07 19:50:35,498 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.flo.demo.web.vm.PageVM]
+2020-02-07 19:50:35,428 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve org.springframework.http.ResponseEntity<com.music.demo.web.vm.AlbumVM>
+2020-02-07 19:50:35,452 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.music.demo.web.vm.AlbumVM]
+2020-02-07 19:50:35,498 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.music.demo.web.vm.PageVM]
 2020-02-07 19:50:35,502 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.Long]
 2020-02-07 19:50:35,627 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.Integer]
 2020-02-07 19:50:35,628 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.String]
-2020-02-07 19:50:35,643 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [collection type; class java.util.List, contains [simple type, class com.flo.demo.service.dto.AlbumDTO]]
-2020-02-07 19:50:35,643 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.flo.demo.service.dto.AlbumDTO]
-2020-02-07 19:50:35,646 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [collection type; class java.util.List, contains [simple type, class com.flo.demo.service.dto.SongDTO]]
-2020-02-07 19:50:35,646 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.flo.demo.service.dto.SongDTO]
+2020-02-07 19:50:35,643 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [collection type; class java.util.List, contains [simple type, class com.music.demo.service.dto.AlbumDTO]]
+2020-02-07 19:50:35,643 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.music.demo.service.dto.AlbumDTO]
+2020-02-07 19:50:35,646 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [collection type; class java.util.List, contains [simple type, class com.music.demo.service.dto.SongDTO]]
+2020-02-07 19:50:35,646 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.music.demo.service.dto.SongDTO]
 2020-02-07 19:50:35,657 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [collection type; class java.util.Set, contains [simple type, class java.lang.String]]
 2020-02-07 19:50:35,657 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.String]
 2020-02-07 19:50:35,664 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.String]
 2020-02-07 19:50:35,665 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.time.Instant]
-2020-02-07 19:50:35,694 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve class com.flo.demo.web.vm.PlaylistUpdateVM
+2020-02-07 19:50:35,694 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve class com.music.demo.web.vm.PlaylistUpdateVM
 2020-02-07 19:50:35,698 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.Long]
 2020-02-07 19:50:35,698 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.String]
 2020-02-07 19:50:35,699 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.Boolean]
-2020-02-07 19:50:35,705 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve org.springframework.http.ResponseEntity<com.flo.demo.service.dto.PlaylistDTO>
-2020-02-07 19:50:35,706 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.flo.demo.service.dto.PlaylistDTO]
+2020-02-07 19:50:35,705 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve org.springframework.http.ResponseEntity<com.music.demo.service.dto.PlaylistDTO>
+2020-02-07 19:50:35,706 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.music.demo.service.dto.PlaylistDTO]
 2020-02-07 19:50:35,706 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.Long]
 2020-02-07 19:50:35,707 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.String]
 2020-02-07 19:50:35,707 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.Boolean]
-2020-02-07 19:50:35,708 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [collection type; class java.util.List, contains [simple type, class com.flo.demo.service.dto.PlaylistSongDTO]]
-2020-02-07 19:50:35,708 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.flo.demo.service.dto.PlaylistSongDTO]
+2020-02-07 19:50:35,708 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [collection type; class java.util.List, contains [simple type, class com.music.demo.service.dto.PlaylistSongDTO]]
+2020-02-07 19:50:35,708 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.music.demo.service.dto.PlaylistSongDTO]
 2020-02-07 19:50:35,709 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.Integer]
-2020-02-07 19:50:35,709 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.flo.demo.service.dto.SongDTO]
+2020-02-07 19:50:35,709 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.music.demo.service.dto.SongDTO]
 2020-02-07 19:50:35,710 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.String]
-2020-02-07 19:50:35,720 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve class com.flo.demo.web.vm.AddTracksVM
+2020-02-07 19:50:35,720 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve class com.music.demo.web.vm.AddTracksVM
 2020-02-07 19:50:35,721 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [collection type; class java.util.List, contains [simple type, class java.lang.Long]]
 2020-02-07 19:50:35,721 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.Long]
-2020-02-07 19:50:35,726 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve org.springframework.http.ResponseEntity<com.flo.demo.service.dto.PlaylistDTO>
-2020-02-07 19:50:35,727 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.flo.demo.service.dto.PlaylistDTO]
+2020-02-07 19:50:35,726 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve org.springframework.http.ResponseEntity<com.music.demo.service.dto.PlaylistDTO>
+2020-02-07 19:50:35,727 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.music.demo.service.dto.PlaylistDTO]
 2020-02-07 19:50:35,727 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.Long]
 2020-02-07 19:50:35,728 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.String]
 2020-02-07 19:50:35,728 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.Boolean]
-2020-02-07 19:50:35,729 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [collection type; class java.util.List, contains [simple type, class com.flo.demo.service.dto.PlaylistSongDTO]]
-2020-02-07 19:50:35,729 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.flo.demo.service.dto.PlaylistSongDTO]
+2020-02-07 19:50:35,729 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [collection type; class java.util.List, contains [simple type, class com.music.demo.service.dto.PlaylistSongDTO]]
+2020-02-07 19:50:35,729 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.music.demo.service.dto.PlaylistSongDTO]
 2020-02-07 19:50:35,729 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.Integer]
-2020-02-07 19:50:35,730 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.flo.demo.service.dto.SongDTO]
+2020-02-07 19:50:35,730 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.music.demo.service.dto.SongDTO]
 2020-02-07 19:50:35,730 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.String]
-2020-02-07 19:50:35,735 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve org.springframework.http.ResponseEntity<java.util.List<com.flo.demo.service.dto.PlaylistDTO>>
-2020-02-07 19:50:35,735 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [collection type; class java.util.List, contains [simple type, class com.flo.demo.service.dto.PlaylistDTO]]
-2020-02-07 19:50:35,735 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.flo.demo.service.dto.PlaylistDTO]
+2020-02-07 19:50:35,735 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve org.springframework.http.ResponseEntity<java.util.List<com.music.demo.service.dto.PlaylistDTO>>
+2020-02-07 19:50:35,735 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [collection type; class java.util.List, contains [simple type, class com.music.demo.service.dto.PlaylistDTO]]
+2020-02-07 19:50:35,735 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.music.demo.service.dto.PlaylistDTO]
 2020-02-07 19:50:35,736 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.Long]
 2020-02-07 19:50:35,736 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.String]
 2020-02-07 19:50:35,737 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.Boolean]
-2020-02-07 19:50:35,737 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [collection type; class java.util.List, contains [simple type, class com.flo.demo.service.dto.PlaylistSongDTO]]
-2020-02-07 19:50:35,738 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.flo.demo.service.dto.PlaylistSongDTO]
+2020-02-07 19:50:35,737 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [collection type; class java.util.List, contains [simple type, class com.music.demo.service.dto.PlaylistSongDTO]]
+2020-02-07 19:50:35,738 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.music.demo.service.dto.PlaylistSongDTO]
 2020-02-07 19:50:35,738 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.Integer]
-2020-02-07 19:50:35,739 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.flo.demo.service.dto.SongDTO]
+2020-02-07 19:50:35,739 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.music.demo.service.dto.SongDTO]
 2020-02-07 19:50:35,739 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.String]
-2020-02-07 19:50:35,741 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve class com.flo.demo.web.vm.PlaylistCreateVM
+2020-02-07 19:50:35,741 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve class com.music.demo.web.vm.PlaylistCreateVM
 2020-02-07 19:50:35,742 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.String]
 2020-02-07 19:50:35,743 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.Boolean]
-2020-02-07 19:50:35,744 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve org.springframework.http.ResponseEntity<com.flo.demo.service.dto.PlaylistDTO>
-2020-02-07 19:50:35,744 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.flo.demo.service.dto.PlaylistDTO]
+2020-02-07 19:50:35,744 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve org.springframework.http.ResponseEntity<com.music.demo.service.dto.PlaylistDTO>
+2020-02-07 19:50:35,744 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.music.demo.service.dto.PlaylistDTO]
 2020-02-07 19:50:35,745 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.Long]
 2020-02-07 19:50:35,745 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.String]
 2020-02-07 19:50:35,746 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.Boolean]
-2020-02-07 19:50:35,746 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [collection type; class java.util.List, contains [simple type, class com.flo.demo.service.dto.PlaylistSongDTO]]
-2020-02-07 19:50:35,746 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.flo.demo.service.dto.PlaylistSongDTO]
+2020-02-07 19:50:35,746 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [collection type; class java.util.List, contains [simple type, class com.music.demo.service.dto.PlaylistSongDTO]]
+2020-02-07 19:50:35,746 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.music.demo.service.dto.PlaylistSongDTO]
 2020-02-07 19:50:35,747 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.Integer]
-2020-02-07 19:50:35,747 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.flo.demo.service.dto.SongDTO]
+2020-02-07 19:50:35,747 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.music.demo.service.dto.SongDTO]
 2020-02-07 19:50:35,748 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.String]
-2020-02-07 19:50:35,761 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve org.springframework.http.ResponseEntity<com.flo.demo.web.vm.SearchVM>
-2020-02-07 19:50:35,762 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.flo.demo.web.vm.SearchVM]
-2020-02-07 19:50:35,762 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [collection type; class java.util.List, contains [simple type, class com.flo.demo.service.dto.AlbumDTO]]
-2020-02-07 19:50:35,763 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.flo.demo.service.dto.AlbumDTO]
+2020-02-07 19:50:35,761 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve org.springframework.http.ResponseEntity<com.music.demo.web.vm.SearchVM>
+2020-02-07 19:50:35,762 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.music.demo.web.vm.SearchVM]
+2020-02-07 19:50:35,762 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [collection type; class java.util.List, contains [simple type, class com.music.demo.service.dto.AlbumDTO]]
+2020-02-07 19:50:35,763 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.music.demo.service.dto.AlbumDTO]
 2020-02-07 19:50:35,763 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.Long]
 2020-02-07 19:50:35,764 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.String]
-2020-02-07 19:50:35,764 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [collection type; class java.util.List, contains [simple type, class com.flo.demo.service.dto.SongDTO]]
-2020-02-07 19:50:35,764 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.flo.demo.service.dto.SongDTO]
+2020-02-07 19:50:35,764 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [collection type; class java.util.List, contains [simple type, class com.music.demo.service.dto.SongDTO]]
+2020-02-07 19:50:35,764 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class com.music.demo.service.dto.SongDTO]
 2020-02-07 19:50:35,765 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.Integer]
 2020-02-07 19:50:35,767 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [collection type; class java.util.Set, contains [simple type, class java.lang.String]]
 2020-02-07 19:50:35,767 DEBUG [http-nio-8080-exec-7] ModelConverterContextImpl: resolve [simple type, class java.lang.String]
@@ -1460,9 +1460,9 @@ org.springframework.security.authentication.InternalAuthenticationServiceExcepti
 	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
 	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144)
 	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:175)
-	at com.flo.demo.service.PlaylistService.getCurrentUser(PlaylistService.java:149)
-	at com.flo.demo.service.PlaylistService.getPlaylist(PlaylistService.java:77)
-	at com.flo.demo.service.PlaylistService$$FastClassBySpringCGLIB$$79a77251.invoke(<generated>)
+	at com.music.demo.service.PlaylistService.getCurrentUser(PlaylistService.java:149)
+	at com.music.demo.service.PlaylistService.getPlaylist(PlaylistService.java:77)
+	at com.music.demo.service.PlaylistService$$FastClassBySpringCGLIB$$79a77251.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -1472,9 +1472,9 @@ org.springframework.security.authentication.InternalAuthenticationServiceExcepti
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
-	at com.flo.demo.service.PlaylistService$$EnhancerBySpringCGLIB$$ed07eb5e.getPlaylist(<generated>)
-	at com.flo.demo.web.rest.PlaylistResource.getPlaylist(PlaylistResource.java:47)
-	at com.flo.demo.web.rest.PlaylistResource$$FastClassBySpringCGLIB$$f3c4e947.invoke(<generated>)
+	at com.music.demo.service.PlaylistService$$EnhancerBySpringCGLIB$$ed07eb5e.getPlaylist(<generated>)
+	at com.music.demo.web.rest.PlaylistResource.getPlaylist(PlaylistResource.java:47)
+	at com.music.demo.web.rest.PlaylistResource$$FastClassBySpringCGLIB$$f3c4e947.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -1484,7 +1484,7 @@ org.springframework.security.authentication.InternalAuthenticationServiceExcepti
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
-	at com.flo.demo.web.rest.PlaylistResource$$EnhancerBySpringCGLIB$$9def5a00.getPlaylist(<generated>)
+	at com.music.demo.web.rest.PlaylistResource$$EnhancerBySpringCGLIB$$9def5a00.getPlaylist(<generated>)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1527,7 +1527,7 @@ org.springframework.security.authentication.InternalAuthenticationServiceExcepti
 	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:154)
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at com.flo.demo.security.jwt.JWTFilter.doFilter(JWTFilter.java:42)
+	at com.music.demo.security.jwt.JWTFilter.doFilter(JWTFilter.java:42)
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
 	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
@@ -1595,7 +1595,7 @@ Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: coul
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
 	at com.sun.proxy.$Proxy184.findOneWithAuthoritiesByLogin(Unknown Source)
-	at com.flo.demo.security.DomainUserDetailService.loadUserByUsername(DomainUserDetailService.java:26)
+	at com.music.demo.security.DomainUserDetailService.loadUserByUsername(DomainUserDetailService.java:26)
 	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
 	... 123 common frames omitted
 Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement
@@ -2693,9 +2693,9 @@ org.springframework.boot.devtools.restart.classloader.RestartClassLoader@203f5a6
 2020-02-07 19:53:29,673 DEBUG [Hikari connection adder] HikariPool: Hikari - After adding stats (total=10, active=0, idle=10, waiting=0)
 2020-02-07 19:53:29,675 DEBUG [restartedMain] WebappClassLoaderBase:     findClass(java.lang.ObjectCustomizer)
 2020-02-07 19:53:29,676 DEBUG [restartedMain] WebappClassLoaderBase:     --> Returning ClassNotFoundException
-2020-02-07 19:53:29,682 DEBUG [restartedMain] WebappClassLoaderBase:     findClass(com.flo.demo.config.WebConfigurerCustomizer)
+2020-02-07 19:53:29,682 DEBUG [restartedMain] WebappClassLoaderBase:     findClass(com.music.demo.config.WebConfigurerCustomizer)
 2020-02-07 19:53:29,682 DEBUG [restartedMain] WebappClassLoaderBase:     --> Returning ClassNotFoundException
-2020-02-07 19:53:29,687 DEBUG [restartedMain] WebappClassLoaderBase:     findClass(com.flo.demo.config.WebConfigurer$$EnhancerBySpringCGLIB$$1ad2b8edCustomizer)
+2020-02-07 19:53:29,687 DEBUG [restartedMain] WebappClassLoaderBase:     findClass(com.music.demo.config.WebConfigurer$$EnhancerBySpringCGLIB$$1ad2b8edCustomizer)
 2020-02-07 19:53:29,688 DEBUG [restartedMain] WebappClassLoaderBase:     --> Returning ClassNotFoundException
 2020-02-07 19:53:29,691 DEBUG [restartedMain] WebappClassLoaderBase:     findClass(org.springframework.context.annotation.ConfigurationClassEnhancer$EnhancedConfigurationCustomizer)
 2020-02-07 19:53:29,691 DEBUG [restartedMain] WebappClassLoaderBase:     --> Returning ClassNotFoundException
@@ -3091,7 +3091,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.flo.demo.DemoApplication.main(DemoApplication.java:39)
+	at com.music.demo.DemoApplication.main(DemoApplication.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -3151,7 +3151,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.flo.demo.DemoApplication.main(DemoApplication.java:39)
+	at com.music.demo.DemoApplication.main(DemoApplication.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -3211,7 +3211,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.flo.demo.DemoApplication.main(DemoApplication.java:39)
+	at com.music.demo.DemoApplication.main(DemoApplication.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -3271,7 +3271,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.flo.demo.DemoApplication.main(DemoApplication.java:39)
+	at com.music.demo.DemoApplication.main(DemoApplication.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -3331,7 +3331,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.flo.demo.DemoApplication.main(DemoApplication.java:39)
+	at com.music.demo.DemoApplication.main(DemoApplication.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -3406,7 +3406,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.flo.demo.DemoApplication.main(DemoApplication.java:39)
+	at com.music.demo.DemoApplication.main(DemoApplication.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -3481,7 +3481,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.flo.demo.DemoApplication.main(DemoApplication.java:39)
+	at com.music.demo.DemoApplication.main(DemoApplication.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -3551,7 +3551,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.flo.demo.DemoApplication.main(DemoApplication.java:39)
+	at com.music.demo.DemoApplication.main(DemoApplication.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -3632,7 +3632,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.flo.demo.DemoApplication.main(DemoApplication.java:39)
+	at com.music.demo.DemoApplication.main(DemoApplication.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -3713,7 +3713,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.flo.demo.DemoApplication.main(DemoApplication.java:39)
+	at com.music.demo.DemoApplication.main(DemoApplication.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -3781,7 +3781,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.flo.demo.DemoApplication.main(DemoApplication.java:39)
+	at com.music.demo.DemoApplication.main(DemoApplication.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -3849,7 +3849,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.flo.demo.DemoApplication.main(DemoApplication.java:39)
+	at com.music.demo.DemoApplication.main(DemoApplication.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -3919,7 +3919,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.flo.demo.DemoApplication.main(DemoApplication.java:39)
+	at com.music.demo.DemoApplication.main(DemoApplication.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
