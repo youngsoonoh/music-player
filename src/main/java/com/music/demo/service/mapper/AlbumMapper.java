@@ -5,10 +5,11 @@ import com.music.demo.domain.Locale;
 import com.music.demo.service.dto.AlbumDTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
+import org.mapstruct.ReportingPolicy;
 
 import java.util.List;
 
-@Mapper(componentModel = "spring")
+@Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface AlbumMapper extends EntityMapper<Album, AlbumDTO> {
 
 

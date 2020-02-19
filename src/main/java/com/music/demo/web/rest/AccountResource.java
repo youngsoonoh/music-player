@@ -5,6 +5,7 @@ import com.music.demo.security.jwt.TokenProvider;
 import com.music.demo.web.vm.LoginVM;
 import com.music.demo.web.vm.TokenVM;
 import io.swagger.v3.oas.annotations.Hidden;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,20 +22,16 @@ import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/api")
-@Hidden
-public class AuthenticationResource {
+@RequiredArgsConstructor
+public class AccountResource {
+
   private final TokenProvider tokenProvider;
 
   private final AuthenticationManagerBuilder authenticationManagerBuilder;
 
-  public AuthenticationResource(TokenProvider tokenProvider,
-                                AuthenticationManagerBuilder authenticationManagerBuilder) {
-    this.tokenProvider = tokenProvider;
-    this.authenticationManagerBuilder = authenticationManagerBuilder;
-  }
 
-  @PostMapping("/authenticate")
-  public ResponseEntity<TokenVM> authorize(@Valid @RequestBody LoginVM loginVM) {
+  @PostMapping("/login")
+  public ResponseEntity<TokenVM> login(@Valid @RequestBody LoginVM loginVM) {
 
     UsernamePasswordAuthenticationToken authenticationToken =
             new UsernamePasswordAuthenticationToken(loginVM.getUsername(), loginVM.getPassword());
