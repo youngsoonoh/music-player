@@ -1,9 +1,5 @@
-# FLO CHALLENGER  
+# Music palyer demo
 
-FLO CHALLENGER API SERVER
-
-> [SWAGGER API](http://ec2-15-164-251-108.ap-northeast-2.compute.amazonaws.com:8080/swagger-ui.html) - 스웨거 API 
->
 
 ## Framework, Libraries
 * **Spring boot** 
