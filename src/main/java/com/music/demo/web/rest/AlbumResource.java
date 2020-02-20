@@ -10,6 +10,7 @@ import io.swagger.v3.oas.annotations.enums.ParameterIn;
 import io.swagger.v3.oas.annotations.media.ArraySchema;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
@@ -24,6 +25,7 @@ import java.net.URISyntaxException;
 @RestController
 @RequestMapping("/api")
 @Tag(name = "Album API", description = "Album 관련 API")
+
 public class AlbumResource {
 
     private final AlbumService albumService;
@@ -32,7 +34,9 @@ public class AlbumResource {
         this.albumService = albumService;
     }
 
-    @Operation(summary = "Album 목록", description = "Album 목록 API")
+    @Operation(summary = "Album 목록",
+               description = "Album 목록 API",
+               security = { @SecurityRequirement(name = "bearer-key") })
     @Parameter(in = ParameterIn.QUERY,
                description = "Zero-based page 번호",
                name = "page",
