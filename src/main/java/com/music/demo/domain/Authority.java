@@ -11,7 +11,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Entity
-@Table(name="flo_authority")
+@Table(name="music_authority")
 @Getter
 @Setter
 public class Authority {
