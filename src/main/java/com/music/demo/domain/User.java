@@ -13,7 +13,7 @@ import java.util.Set;
 @Getter
 @Setter
 @Entity
-@Table(name="flo_user")
+@Table(name="music_user")
 public class User extends BaseEntity{
 
   @Id
@@ -31,10 +31,12 @@ public class User extends BaseEntity{
   @Column(name = "password_hash", length = 60, nullable = false)
   private String password;
 
+
+
   @JsonIgnore
   @ManyToMany
   @JoinTable(
-          name = "flo_user_authority",
+          name = "music_user_authority",
           joinColumns = {@JoinColumn(name = "user_id", referencedColumnName = "id")},
           inverseJoinColumns = {@JoinColumn(name = "authority_name", referencedColumnName = "name")})
   @BatchSize(size = 20)

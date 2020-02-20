@@ -18,8 +18,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 								contact = @Contact(url = "http://demo.com", name = "노영수", email = "guitaryc33@gmail.com")
 				),
 				servers = {
-								@Server(description = "prod",url = "http://ec2-15-164-251-108.ap-northeast-2.compute.amazonaws.com:8080"),
-								@Server(description = "dev",url = "http://localhost:8080")
+								@Server(description = "dev",url = "http://localhost:8080"),
+								@Server(description = "prod",url = "http://ec2-15-164-251-108.ap-northeast-2.compute.amazonaws.com:8080")
+
 				}
 )
 public class DemoApplication {
