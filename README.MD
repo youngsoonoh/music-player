@@ -10,12 +10,18 @@
 * **[mapstruct](https://mapstruct.org/):**  매핑
 * **[jib](https://github.com/GoogleContainerTools/jib):** 도커 이미지 빌드 
 
-## BUILD
+## 접속 정보 
 
-* **도커 ([docker-compose](docker/docker-compose.yml))**
+* **스웨거**
 
     ```
-    gradlew -Pprod jibDockerBuild
+    localhost:8080/swagger-ui.html
+    ```
+
+* **H2 Console**
+
+    ```
+    localhost:8080/h2-console (id: user)
     ```
 
 
