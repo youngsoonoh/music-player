@@ -2,7 +2,10 @@ package com.music.demo.web.rest;
 
 import com.music.demo.security.jwt.JWTFilter;
 import com.music.demo.security.jwt.TokenProvider;
+import com.music.demo.service.AccountService;
+import com.music.demo.service.dto.UserDTO;
 import com.music.demo.web.vm.LoginVM;
+import com.music.demo.web.vm.RegisterVM;
 import com.music.demo.web.vm.TokenVM;
 import io.swagger.v3.oas.annotations.Hidden;
 import lombok.RequiredArgsConstructor;
@@ -13,10 +16,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
@@ -29,6 +29,7 @@ public class AccountResource {
 
   private final AuthenticationManagerBuilder authenticationManagerBuilder;
 
+  private final AccountService accountService;
 
   @PostMapping("/login")
   public ResponseEntity<TokenVM> login(@Valid @RequestBody LoginVM loginVM) {
@@ -48,4 +49,9 @@ public class AccountResource {
     return new ResponseEntity<>(new TokenVM(jwt), httpHeaders, HttpStatus.OK);
   }
 
+  @PostMapping("/register")
+  @ResponseStatus(HttpStatus.CREATED)
+  public void register(@RequestBody RegisterVM registerVMO) {
+    accountService.register(registerVMO);
+  }
 }

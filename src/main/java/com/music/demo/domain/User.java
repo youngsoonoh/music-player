@@ -31,7 +31,11 @@ public class User extends BaseEntity{
   @Column(name = "password_hash", length = 60, nullable = false)
   private String password;
 
+  @Size(max=30)
+  private String name;
 
+  @Size(max=30)
+  private String mobile;
 
   @JsonIgnore
   @ManyToMany
