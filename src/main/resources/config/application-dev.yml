@@ -2,6 +2,8 @@ logging:
   level:
     ROOT: DEBUG
     com.flo.demo: DEBUG
+    org.hibernate.SQL: debug
+    org.hibernate.type: trace
 spring:
   profiles:
     active: dev
@@ -18,7 +20,6 @@ spring:
       auto-commit: false
     initialization-mode: always
   jpa:
-    show-sql: true
     hibernate:
       ddl-auto: create
     database-platform: org.hibernate.dialect.H2Dialect

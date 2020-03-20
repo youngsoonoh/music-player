@@ -9,6 +9,7 @@ configurations {
 dependencies {
     developmentOnly "org.springframework.boot:spring-boot-devtools"
     implementation "com.h2database:h2"
+    implementation("com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.6.1")
 }
 
 def profiles = "dev"
