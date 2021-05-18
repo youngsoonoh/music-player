@@ -1,4 +1,4 @@
-# Music palyer demo
+# Music player demo
 
 
 ## Framework, Libraries
