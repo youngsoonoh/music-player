@@ -2,7 +2,7 @@ spring:
   application:
     name: demo
   profiles:
-    active:
+    active: dev
   autoconfigure:
     exclude: org.springframework.boot.autoconfigure.data.elasticsearch.ElasticsearchAutoConfiguration,org.springframework.boot.autoconfigure.data.elasticsearch.ElasticsearchDataAutoConfiguration
   main:
