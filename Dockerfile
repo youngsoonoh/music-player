@@ -1,13 +1,12 @@
-FROM adoptopenjdk:11-jre-hotspot as builder
-COPY gradlew .
-COPY gradle gradle
-COPY build.gradle .
-COPY settings.gradle .
-COPY gradle.properties .
-COPY src src
-RUN chmod +x ./gradlew
-RUN gradle wrapper
-RUN ./gradlew build -x test
+#FROM adoptopenjdk:11-jre-hotspot as builder
+#COPY gradlew .
+#COPY gradle gradle
+#COPY build.gradle .
+#COPY settings.gradle .
+#COPY gradle.properties .
+#COPY src src
+#RUN chmod +x ./gradlew
+#RUN ./gradlew bootJar
 
 
 FROM adoptopenjdk:11-jre-hotspot
