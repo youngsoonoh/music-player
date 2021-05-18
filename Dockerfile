@@ -1,3 +1,13 @@
+FROM adoptopenjdk:11-jre-hotspot as builder
+COPY gradlew .
+COPY gradle gradle
+COPY build.gradle .
+COPY settings.gradle .
+COPY src src
+RUN chmod +x ./gradlew
+RUN ./gradlew bootjar
+
+
 FROM adoptopenjdk:11-jre-hotspot
 
 ARG JAR_FILE=build/libs/*.jar
