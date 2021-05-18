@@ -3,9 +3,10 @@ COPY gradlew .
 COPY gradle gradle
 COPY build.gradle .
 COPY settings.gradle .
+COPY gradle.properties .
 COPY src src
 RUN chmod +x ./gradlew
-RUN ./gradlew bootjar
+RUN ./gradlew build -x test
 
 
 FROM adoptopenjdk:11-jre-hotspot
