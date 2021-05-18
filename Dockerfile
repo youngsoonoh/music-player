@@ -6,7 +6,7 @@ COPY settings.gradle .
 COPY gradle.properties .
 COPY src src
 RUN chmod +x ./gradlew
-RUN ./gradlew wrapper
+RUN gradle wrapper
 RUN ./gradlew build -x test
 
 
