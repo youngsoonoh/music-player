@@ -3,6 +3,7 @@ HELP.md
 # Gradle
 ######################
 .gradle/
+build/resources
 #/build/
 
 ######################
